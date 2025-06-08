@@ -2,7 +2,7 @@ from socket import socket as sk, AF_INET, SOCK_STREAM
 from requests import get
 
 # IP Reveal
-print(f"IP: {get("https://api.ipify.org")}")
+print(f"IP: {get("https://api.ipify.org").text}")
 
 # Server Code
 serv = sk(AF_INET, SOCK_STREAM)
