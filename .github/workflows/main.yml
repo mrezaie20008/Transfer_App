@@ -1,7 +1,7 @@
 name: Learning Python
 
 on:
-  
+  workflow_dispatch:
 
 jobs:
   my_job:
@@ -11,8 +11,6 @@ jobs:
       - name: Set up Python 3.9
         uses: actions/setup-python@v4
         with:
-          python-version: 3.9
-      - name: Install dependencies
-        run: pip install requests
-      - name: Run __main__.py
-        run: python __main__.py
+          python-version: 3.12
+      - name: Running...
+        run: python main.py
